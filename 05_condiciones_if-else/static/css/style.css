@@ -1,0 +1,23 @@
+*{
+margin: 0;
+padding: 0;
+box-shadow: border-box;
+
+}
+
+div{
+margin: 10px;
+text-align: center;
+}
+
+.ej{
+display: flex;
+justify-content: center;
+}
+
+button {
+border-radius: 10px ;
+width: 200px;
+height: 30px;
+}
+
