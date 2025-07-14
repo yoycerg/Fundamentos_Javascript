@@ -85,44 +85,44 @@ function compararDosNumeros() {
 //Calificación escolar
 
 function calificacionEscolar() {
-  let calificacion = parseInt(prompt("Ingrese su calificación:"));
-   if (calificacion >= 4.0 && calificacion <= 7.0){
-    alert("Aprobado con " + calificacion)
-   } 
-   else if (calificacion >= 1.0 && calificacion < 3.9){
-    alert("Reprobado con " + calificacion)
-   }
-   else {
-    alert("Ingrese un valor válido.")
-   }
+    let calificacion = parseInt(prompt("Ingrese su calificación:"));
+    if (calificacion >= 4.0 && calificacion <= 7.0) {
+        alert("Aprobado con " + calificacion)
+    }
+    else if (calificacion >= 1.0 && calificacion < 3.9) {
+        alert("Reprobado con " + calificacion)
+    }
+    else {
+        alert("Ingrese un valor válido.")
+    }
 }
 
 // Nombre de usuario válido
 
 function verificarNombreUsuario() {
-let nombreUsuario = "admin";
-let usuario = prompt("Ingrese su nombre de usuario:");
+    let nombreUsuario = "admin";
+    let usuario = prompt("Ingrese su nombre de usuario:");
 
-if (usuario ==nombreUsuario)
-    alert("Bienvenido, administrador" );
-    
-else {
-alert("Usuario no reconocido");
+    if (usuario == nombreUsuario)
+        alert("Bienvenido, administrador");
 
-}
-    
+    else {
+        alert("Usuario no reconocido");
+
+    }
+
 }
 
 // Verificar si una palabra empieza con "A"
 
 function verificarPalabra() {
     let palabra = prompt("Ingrese una palabra:")
-let palabraA = "A";
+    let palabraA = "A";
     if (palabra[0] == "A") {
         alert("La palabra " + palabra + " empieza con A.")
     }
-    
-    
+
+
     else {
         alert("La palabra " + palabra + " no empieza con A.")
     }
@@ -130,4 +130,30 @@ let palabraA = "A";
 
 }
 
+//Precio con descuento Solicita el precio de un producto. Si el precio es mayor a 10000, muestra que aplica descuento. Si no, indica precio normal.
+function verificarPrecio() {
+    let precio = prompt("Ingrese el precio del producto:");
+let iva = 0.21;
+    if (precio > 10000) {
+        alert("El precio del producto es " + precio + " y el descuento es de: " + (precio * iva) + ".")
+    } else if (precio <= 10000) {
+        alert("El precio del producto es " + precio + " y no aplica descuento.")
+    } else {
+        alert("Ingrese un valor válido.")
+    }
+
+}
+
+//Verificar si una persona puede conducir Solicita la edad del usuario y si tiene licencia (por ejemplo, respondiendo "sí" o "no"). Si tiene 18 o más y respondió que tiene licencia, muestra “Puede conducir”. Si no, muestra “No puede conducir”.
+ 
+function verificarConduccion() {
+    let edad = parseInt(prompt("Ingrese su edad:"));
+    let tieneLicencia = prompt("¿Tiene licencia?").toLocaleLowerCase();
+
+    if (edad >= 18 && tieneLicencia === "si") {
+        alert("Puede conducir.");
+    } else {
+        alert("No puede conducir.");
+    }
+}
 
