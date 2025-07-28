@@ -10,15 +10,15 @@ function compararPalabras() {
     } else {
         alert("Ambas palabras tienen la misma cantidad de letras.");
     }
-}       
+}
 
 // Pide al usuario que ingrese un correo. Verifica si el texto contiene el símbolo @. Si lo tiene, muestra "Correo válido", si no, "Correo inválido".
 
 function verificarCorreo() {
     let correo = prompt("Ingrese su correo electrónico:");
-    
-    if (correo.includes("@")) {
-        alert("Correo válido");
+
+    if (correo.includes("@gmail.com")) {
+        alert("Correo válido " + correo);
     } else {
         alert("Correo inválido");
     }
@@ -28,7 +28,7 @@ function verificarCorreo() {
 
 function verificarNumero() {
     let numero = parseFloat(prompt("Ingrese un número:"));
-    
+
     if (numero > 0) {
         alert("El número " + numero + " es positivo.");
     } else if (numero < 0) {
@@ -44,7 +44,7 @@ function verificarNumero() {
 
 function saludoPorHora() {
     let hora = parseInt(prompt("Ingrese la hora actual (0-23):"));
-    
+
     if (hora >= 0 && hora < 12) {
         alert("Buenos días");
     } else if (hora >= 12 && hora < 18) {
@@ -61,10 +61,10 @@ function saludoPorHora() {
 
 function verificarLetraE() {
     let palabra = prompt("Ingrese una palabra:");
-    
+
     if (palabra.includes("e")) {
         alert("Contiene la letra 'e'");
     } else {
         alert("No contiene la letra 'e'");
     }
-}   
+}
