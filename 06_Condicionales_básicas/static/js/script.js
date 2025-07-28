@@ -68,3 +68,6 @@ function verificarLetraE() {
         alert("No contiene la letra 'e'");
     }
 }
+
+//Solicita el precio de un producto. Si el precio es mayor a 10000, muestra que aplica descuento. Si no, indica precio normal.
+
