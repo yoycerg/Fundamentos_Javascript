@@ -82,10 +82,27 @@ function ejercicio4() {
     while (count <= numero) {
         count++
 
-        if (count %2 == 0) {
+        if (count % 2 == 0) {
             resultado += `${count}`
         }
 
     }
     alert(` ${resultado}`)
 }
+
+
+//5️⃣ Bucle for: Tabla de multiplicar Pide un número al usuario e imprime su tabla de multiplicar del 1 al 10 en un solo alert.
+
+
+function ejercicio5() {
+
+    let numero = parseInt(prompt("Ingresa un número: "))
+    let tablas = `Tabla de ${numero}: `;
+
+    for (let i = 1; i <= 10; i++) {
+        tablas += `\n ${numero} x ${i} = ${numero * i}`
+
+    }
+    alert(tablas)
+}
+
