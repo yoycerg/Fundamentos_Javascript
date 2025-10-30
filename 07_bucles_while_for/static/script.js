@@ -161,6 +161,7 @@ function ejercicio9() {
 
         }
     }
+    respuesta += 1
     alert(`Las sumas de ${largoImpar} = ${respuesta}`)
 
 }
