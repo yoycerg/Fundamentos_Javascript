@@ -106,3 +106,61 @@ function ejercicio5() {
     alert(tablas)
 }
 
+//6️⃣ Bucle for: Números pares hasta n Solicita un número n e imprime todos los números pares desde 1 hasta n usando un bucle for.
+
+function ejercicio6() {
+
+    let num = parseInt(prompt("Ingresar un número: "));
+    let resultado = `los numeros pares de ${num} son: `;
+
+    for (let i = 1; i <= num; i++) {
+        if (i % 2 == 0) {
+            resultado += ` ${i}`
+        }
+
+    }
+    alert(resultado)
+}
+
+//7️⃣ Bucle for: Contar letras de una palabra Pide una palabra al usuario y muestra cuántas letras tiene usando un bucle for para recorrerla.
+
+
+function ejercicio7() {
+    let word = parseInt(prompt("Dime un numero: "));
+    let cont = 0;
+    for (let i = 0; i < word.length; i++) {
+        cont++
+    }
+    alert(`La palabra "${word} tiene ${cont} letras."`)
+
+}
+
+//8️⃣ Bucle for: Calcular factorial Solicita un número n e imprime el factorial de ese número (n × n-1 × n-2 × … × 1) usando un bucle for.
+
+function ejercicio8() {
+    let numero = parseInt(prompt("Ingresar un numero"));
+    let factorial = 1;
+    let largo = "1 ";
+    for (let i = 2; i <= numero; i++) {
+        largo += ` * ${i}`
+        factorial *= i;
+    }
+    alert(`El factorial de ${numero} es : ${largo} = ${factorial}`)
+}
+
+//9️⃣ Bucle for: Suma de números impares hasta n Pide un número n y suma todos los números impares desde 1 hasta n. Muestra el resultado con alert.}
+
+function ejercicio9() {
+    let numero = parseInt(prompt("Ingresar números: "));
+    let respuesta = 0;
+    let largoImpar = "1"
+    for (let i = 2; i <= numero; i++) {
+        if (i % 2 != 0) {
+            respuesta += i
+            largoImpar += ` + ${i}`
+
+        }
+    }
+    alert(`Las sumas de ${largoImpar} = ${respuesta}`)
+
+}
